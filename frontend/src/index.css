@@ -1,0 +1,51 @@
+@import "./tailwind.css"; /* Import Tailwind first */
+
+body {
+  @apply bg-gray-50 text-gray-800 font-sans; /* Use default sans-serif font */
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition duration-300 ease-in-out hover:shadow-lg border border-gray-200;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition duration-300 ease-in-out focus:outline-none focus:ring-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500/50;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-200 text-secondary-800 hover:bg-secondary-300 focus:ring-secondary-300/50;
+  }
+
+  .btn-outline {
+    @apply border border-primary-500 text-primary-500 hover:bg-primary-50 focus:ring-primary-500/50;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 rounded-md border border-secondary-300 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-transparent;
+  }
+
+  .pastel-card-1 {
+    @apply border-l-4 border-pastel-blue bg-[color-mix(in_srgb,var(--color-pastel-blue),transparent_50%)];
+  }
+
+  .pastel-card-2 {
+    @apply border-l-4 border-pastel-green bg-[color-mix(in_srgb,var(--color-pastel-green),transparent_50%)];
+  }
+
+  .pastel-card-3 {
+    @apply border-l-4 border-pastel-yellow bg-[color-mix(in_srgb,var(--color-pastel-yellow),transparent_50%)];
+  }
+
+  .pastel-card-4 {
+    @apply border-l-4 border-pastel-purple bg-[color-mix(in_srgb,var(--color-pastel-purple),transparent_50%)];
+  }
+
+  .pastel-card-5 {
+    @apply border-l-4 border-pastel-pink bg-[color-mix(in_srgb,var(--color-pastel-pink),transparent_50%)];
+  }
+}
