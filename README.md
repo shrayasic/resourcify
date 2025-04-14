@@ -1,75 +1,31 @@
-# Project Title
+# Resourcify: Resource Management System
 
 ## Description
-This project is a web application that allows users to manage topics, subtopics, and resources. It features user authentication, file uploads, and a user-friendly interface built with React. The backend is powered by Flask, providing a robust API for data management.
+The Topic Management System is a web application designed to help users manage topics, subtopics, and associated resources. It provides a user-friendly interface for creating, updating, and deleting topics and subtopics, as well as uploading and managing resources. The application features user authentication, allowing users to securely log in and manage their content.
 
 ## Features
-- User registration and login with JWT authentication.
-- Create, read, update, and delete topics and subtopics.
-- Upload and manage resources associated with subtopics.
-- Search functionality for topics and subtopics.
-- Responsive design for a seamless user experience.
+- **User Authentication**: Secure registration and login using JWT tokens.
+- **Topic Management**: Create, read, update, and delete topics.
+- **Subtopic Management**: Create, read, update, and delete subtopics under each topic.
+- **Resource Management**: Upload and manage resources associated with subtopics.
+- **Search Functionality**: Search for topics and subtopics by name.
+- **File Uploads**: Upload files to Cloudinary for resource management.
+- **Responsive Design**: A modern and responsive user interface built with React and Tailwind CSS.
 
 ## Technologies Used
-- **Backend**: Flask, Flask-CORS, Flask-PyMongo, Flask-Bcrypt, Flask-JWT-Extended, MongoDB
-- **Frontend**: React, Vite, Tailwind CSS, Axios
-- **Cloud Storage**: Cloudinary for file uploads
-- **Environment Variables**: dotenv for managing configuration
+- **Backend**:
+  - Flask: A lightweight WSGI web application framework.
+  - Flask-CORS: For handling Cross-Origin Resource Sharing.
+  - Flask-PyMongo: For MongoDB integration.
+  - Flask-Bcrypt: For password hashing.
+  - Flask-JWT-Extended: For JWT authentication.
+  - MongoDB: NoSQL database for data storage.
+  - Cloudinary: For file uploads and management.
+  - dotenv: For managing environment variables.
 
-## Installation Instructions
-
-### Backend
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd backend
-   ```
-2. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Frontend
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install the required packages:
-   ```bash
-   npm install
-   ```
-
-## Usage
-1. Start the backend server:
-   ```bash
-   python app.py
-   ```
-2. Start the frontend development server:
-   ```bash
-   npm run dev
-   ```
-
-## API Endpoints
-- **User Authentication**
-  - `POST /api/register`: Register a new user.
-  - `POST /api/login`: Log in an existing user.
-
-- **Topics**
-  - `GET /api/topics`: Get all topics for the logged-in user.
-  - `POST /api/topics`: Create a new topic.
-  - `GET /api/topics/search`: Search for topics by name.
-
-- **Subtopics**
-  - `GET /api/topics/<topic_id>/subtopics`: Get all subtopics for a specific topic.
-  - `POST /api/topics/<topic_id>/subtopics`: Create a new subtopic.
-
-- **Resources**
-  - `GET /api/subtopics/<subtopic_id>/resources`: Get all resources for a specific subtopic.
-  - `POST /api/subtopics/<subtopic_id>/resources`: Create a new resource.
-
-## Frontend Scripts
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the application for production.
-- `npm run lint`: Run ESLint to check for code quality.
-- `npm run preview`: Preview the built application.
+- **Frontend**:
+  - React: A JavaScript library for building user interfaces.
+  - Vite: A build tool that provides a fast development environment.
+  - Tailwind CSS: A utility-first CSS framework for styling.
+  - Axios: For making HTTP requests to the backend API.
 
